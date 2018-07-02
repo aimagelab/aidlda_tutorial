@@ -1,2 +1,3 @@
-from models.convnet import ConvNet
-from models.convnet import crossentropy_loss
+from models.myCNN import ConvNet as myConvNet
+from models.CNN import ConvNet as ConvNet
+from models.myCNN import crossentropy_loss

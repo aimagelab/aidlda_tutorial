@@ -11,6 +11,7 @@ import torchvision
 import torchvision.transforms as transforms
 
 from models import ConvNet
+from models import myConvNet
 from models import crossentropy_loss
 from utils import progress_bar
 
@@ -158,7 +159,7 @@ def main():
 
     # Get model
     print('==> Building model..')
-    model = ConvNet(n_classes=10).to(device)
+    model = myConvNet(n_classes=10).to(device)
 
     # Get optimizer
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
